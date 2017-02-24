@@ -1,0 +1,21 @@
+extends  ../layout
+
+block content
+  h1 Usuarios del sistema
+  table(class="col-md-12")
+    thead
+      th Nombre de usuario
+      th Nombre
+      th Primer apellido
+      th Segundo apellido
+      th
+        a(class="btn btn-primary", href="/users/blank") Nuevo
+    tbody
+      tr
+        td EOPG
+        td Edgar
+        td Peinado
+        td Garcia
+        td
+          a(class="btn btn-primary", href="#") Editar
+          a(class="btn btn-primary", href="#") Eliminar

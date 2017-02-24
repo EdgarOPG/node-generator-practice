@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+  h1 Nuevo Usuario
+  form(name='add-user', id='form-add-user', method='POST', action='/users/create')
+    label Username
+    input(type='text', id='usuario', name='usuario')
+    label Nombre
+    input(type='text', id='nombre', name='nombre')
+    label Primer Apellido
+    input(type='text', id='primer-apellido', name='primerApellido')
+    label Segundo Apellido
+    input(type='text', id='segundo-apellido', name='segundoApellido')
+    input(type='submit')
