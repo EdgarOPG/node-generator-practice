@@ -2,11 +2,22 @@
 const express = require('express');
 
 function index(req, res, next) {
-  res.render('users/index', {});
+  const users = [
+  {id:1,usuario:'edgar18',
+  nombre:'Edgar',primerapellido:'Peinado',
+  segundoApellido:'Garcia'},
+  {id:2,usuario:'erik21',
+  nombre:'Erik',primerapellido:'Zubia',
+  segundoApellido:'Hernandez'},
+  {id:3,usuario:'Daniela8',
+  nombre:'Daniela',primerapellido:'Santi',
+  segundoApellido:'Castro'}
+];
+res.render('users/index', {'users':users});
 }
 
 function newUser(req, res, next) {
-  res.render('users/blank', {});
+  res.render('users/new', {});
 }
 
 function create(req, res, next) {

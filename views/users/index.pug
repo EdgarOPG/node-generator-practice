@@ -11,11 +11,12 @@ block content
       th
         a(class="btn btn-primary", href="/users/new") Nuevo
     tbody
-      tr
-        td EOPG
-        td Edgar
-        td Peinado
-        td Garcia
-        td
-          a(class="btn btn-primary", href="#") Editar
-          a(class="btn btn-primary", href="#") Eliminar
+      each user in users
+        tr
+          td #{user.usuario}
+          td #{user.nombre}
+          td #{user.primerApellido}
+          td #{user.segundoApellido}
+          td
+            a(class="btn btn-primary", href="#") Editar
+            a(class="btn btn-primary", href="#") Eliminar
