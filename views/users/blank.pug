@@ -2,7 +2,7 @@ extends ../layout
 
 block content
   h1 Nuevo Usuario
-  form(name='add-user', id='form-add-user', method='POST', action='/users/create')
+  form(name='add-user', id='form-add-user', method='POST', action='/users')
     label Username
     input(type='text', id='usuario', name='usuario')
     label Nombre
